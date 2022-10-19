@@ -34,7 +34,7 @@ a {
 
 header,
 .main {
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   margin: 0;
   font-size: 2rem;
@@ -256,7 +256,7 @@ h1 {
 .about-me-waves {
   display: flex;
   flex-basis: 100%;
-  background-image: url("images/wave.svg");
+  background-image: url("images/wave-gray.svg");
 }
 
 /******************************************
@@ -265,7 +265,7 @@ h1 {
 
 .recent-work {
   padding: 20px 0 200px 0;
-  background-color: #0b1d25;
+  background-color: #1f1f1f;
   color: white;
   font-size: 2.5rem;
 }
@@ -287,6 +287,7 @@ h1 {
   margin: 5rem;
   height: 300px;
   flex: 40%;
+  color: black;
 }
 
 /******************************************
@@ -300,7 +301,7 @@ footer p {
 
 footer {
   padding: 200px 0;
-  background-color: #1c1c1c;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   align-items: center;
