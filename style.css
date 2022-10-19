@@ -288,8 +288,8 @@ h1 {
   margin: 1rem;
   width: 100%;
   flex: 33%;
-  height: 200px;
-  background-color: rgb(231, 231, 231);
+  height: 250px;
+  background-color: rgba(237, 237, 237, 0.905);
   border-radius: 5rem;
   color: black;
   font-size: 2.5rem;
@@ -303,21 +303,29 @@ h1 {
   flex-grow: 1;
 }
 
+.services-left:hover,
+.services-right:hover,
+.services-middle div:last-child:hover,
+.services-middle > div:hover {
+  scale: 1.1;
+}
+
 .services-left div {
-  border-top: 5px solid rgb(37, 170, 241);
+  border-top: 5px solid rgb(29, 131, 186);
 }
 
 .services-middle div:last-child {
-  border-top: 5px solid rgb(241, 37, 41);
+  margin-top: 100px;
+  border-top: 5px solid rgb(172, 27, 29);
 }
 
 .services-middle > div {
   margin-bottom: 3rem;
-  border-top: 5px solid rgb(167, 246, 9);
+  border-top: 5px solid rgb(115, 169, 7);
 }
 
 .services-right div {
-  border-top: 5px solid rgb(246, 171, 9);
+  border-top: 5px solid rgb(215, 150, 8);
 }
 
 /******************************************
