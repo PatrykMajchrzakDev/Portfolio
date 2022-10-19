@@ -260,72 +260,92 @@ h1 {
 }
 
 /******************************************
-/* SERVICES
+/* RECENT WORK
 /*******************************************/
 
-.services {
+.recent-work {
   padding: 20px 0 200px 0;
   background-color: #0b1d25;
   color: white;
   font-size: 2.5rem;
 }
 
-.services h2 {
+.recent-work h4 {
   font-size: 3rem;
   text-align: center;
-  padding: 0 4rem 100px 4rem;
+  margin-bottom: 100px;
 }
 
-.services-cards {
-  justify-content: space-evenly;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  display: flex;
+  background-color: bisque;
+  margin: 5rem;
+  height: 300px;
+  flex: 40%;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+footer p {
+  color: white;
+  font-size: 3rem;
+  padding: 0 0 0 20px;
+}
+
+footer {
+  padding: 200px 0;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  display: flex;
-  flex-grow: 1.5;
-}
-
-.services-box {
-  flex-shrink: 1;
-  margin: 1rem;
-  width: 100%;
-  flex: 33%;
-  height: 250px;
-  background-color: rgba(237, 237, 237, 0.905);
-  border-radius: 5rem;
-  color: black;
-  font-size: 2.5rem;
   justify-content: center;
+}
+
+footer form {
   display: flex;
-  box-shadow: 0px 20px 40px -20px white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+  width: 100%;
+}
+footer form div {
+  padding: 0 10%;
+  margin: 2rem 0;
+  display: flex;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-container {
-  margin: 2rem;
+form div input {
   flex-grow: 1;
+  margin-left: 20px;
 }
 
-.services-left:hover,
-.services-right:hover,
-.services-middle div:last-child:hover,
-.services-middle > div:hover {
-  scale: 1.1;
+form div textarea {
+  flex-grow: 1;
+  margin-left: 20px;
+  height: 200px;
 }
 
-.services-left div {
-  border-top: 5px solid rgb(29, 131, 186);
-}
-
-.services-middle div:last-child {
-  margin-top: 100px;
-  border-top: 5px solid rgb(172, 27, 29);
-}
-
-.services-middle > div {
-  margin-bottom: 3rem;
-  border-top: 5px solid rgb(115, 169, 7);
-}
-
-.services-right div {
-  border-top: 5px solid rgb(215, 150, 8);
+form button {
+  font-size: 2rem;
+  background-color: green;
+  padding: 10px 30px;
+  max-width: 150px;
+  border-radius: 24px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 0.5px;
 }
 
 /******************************************
@@ -336,20 +356,30 @@ h1 {
   .main-description {
     align-items: center;
   }
+  .project-box {
+    height: 400px;
+    margin: 7rem;
+  }
 }
 
 /******************************************
-/* RESPONSIVE LAPTOP 1024+
+/* RESPONSIVE LAPTOP
 /*******************************************/
 
 @media all and (max-width: 1024px) {
   .about-me-second {
     max-height: 400px;
   }
+  .project-box {
+    max-width: 500px;
+  }
+  .projects {
+    justify-content: space-around;
+  }
 }
 
 /******************************************
-/* RESPONSIVE MOBILE LARGE 768+
+/* RESPONSIVE TABLET
 /*******************************************/
 @media all and (max-width: 768px) {
   .main-description {
@@ -360,5 +390,32 @@ h1 {
   }
   .main {
     flex-direction: column;
+  }
+  form div input,
+  form div textarea {
+    width: 250px;
+  }
+}
+
+/******************************************
+/* RESPONSIVE BIG MOBILE
+/*******************************************/
+
+@media all and (max-width: 425px) {
+  form div textarea {
+    width: 250px;
+  }
+  form div:nth-child(3) {
+    padding: 0 10px 0 0;
+  }
+}
+
+/******************************************
+/* RESPONSIVE MOBILE 
+/*******************************************/
+
+@media all and (max-width: 375px) {
+  .project-box {
+    max-height: 250px;
   }
 }
