@@ -1,0 +1,18 @@
+.container {
+  box-shadow: $shadow-inner;
+  padding: 1rem;
+  position: absolute;
+  bottom: 45%;
+  right: 20px;
+
+  @include mobile {
+    bottom: 0;
+    width: 100%;
+    right: 0;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

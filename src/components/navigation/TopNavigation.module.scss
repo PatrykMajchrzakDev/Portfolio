@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  box-shadow: $shadow-lg;
+}
+
+.logo {
+  padding: 0 2rem;
+  font-size: $font-size-xl;
+  justify-self: start;
+
+  @include mobile {
+    font-size: $font-size-large;
+  }
+}
+
+.list {
+  font-size: $font-size-large;
+  display: flex;
+  justify-self: end;
+
+  @include tablet {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    li {
+      a {
+        padding: 0 2rem;
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  display: none; // Hide hamburger menu by default
+
+  @include tablet {
+    display: flex; // Show the hamburger menu on mobile
+    align-items: center;
+    cursor: pointer;
+    width: 25px;
+    padding-right: 4rem;
+
+    img {
+      height: 25px;
+    }
+  }
+}
+
+
