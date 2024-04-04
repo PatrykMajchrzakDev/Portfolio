@@ -1,0 +1,21 @@
+// ============= BREAKPOINTS =============
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// ============= COLORS =============
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$default-text-color: black;
+
+// ============= FONT =============
+$font-size-default: 16px;
+$font-size-large: 18px;
+$font-size-xl: 24px;
+
+// ============= HEADINGS =============
+$h1: 40px;
+
+//============= CONTAINERS =============
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+$shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.25);
