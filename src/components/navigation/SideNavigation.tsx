@@ -1,7 +1,7 @@
 // ============= Import Modules =============
 
 import { Link } from "react-router-dom";
-import styles from "./SideNavigation.module.scss";
+import styles from "./scss/SideNavigation.module.scss";
 
 // ============= Import Components =============
 const SideNavigation = () => {

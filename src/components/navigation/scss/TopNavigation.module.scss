@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,11 +35,14 @@
         text-decoration: none;
         color: black;
       }
+      a:hover {
+        color: cornflowerblue;
+      }
     }
   }
 }
 
-.hamburger-menu {
+.hamburger {
   display: none; // Hide hamburger menu by default
 
   @include tablet {
@@ -54,4 +58,37 @@
   }
 }
 
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  visibility: hidden; // Hide by default
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  box-shadow: $shadow-lg;
+}
 
+.mobileMenuOpen {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(5.5rem);
+  @include mobile {
+    transform: translateY(4.9rem);
+  }
+}
+
+.mobileMenuList {
+  height: 100%;
+  width: 100%;
+  li {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: darken(#fff, 10%);
+  }
+}
