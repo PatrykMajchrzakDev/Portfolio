@@ -10,16 +10,16 @@
 
 .logo {
   padding: 0 2rem;
-  font-size: $font-size-xl;
+  font-size: $headings-size;
   justify-self: start;
 
   @include mobile {
-    font-size: $font-size-large;
+    font-size: $hero-text-size;
   }
 }
 
 .list {
-  font-size: $font-size-large;
+  font-size: $text-size;
   display: flex;
   justify-self: end;
 
@@ -81,6 +81,7 @@
 }
 
 .mobileMenuList {
+  font-size: $headings-size;
   height: 100%;
   width: 100%;
   li {

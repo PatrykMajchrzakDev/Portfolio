@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "./scss/TopNavigation.module.scss";
 
 // ============= Import Components =============
-import hamburgerMenu from "../../assets/icons/bars-solid.svg";
-import xMark from "../../assets/icons/xmark-solid.svg";
+import hamburgerMenu from "/assets/icons/bars-solid.svg";
+import xMark from "/assets/icons/xmark-solid.svg";
 
 const TopNavigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const TopNavigation = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div
         className={`${styles.mobileMenu} ${
           isMenuOpen ? styles.mobileMenuOpen : ""
@@ -61,7 +61,7 @@ const TopNavigation = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 
