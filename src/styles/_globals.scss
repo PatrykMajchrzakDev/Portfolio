@@ -1,16 +1,24 @@
 // Resetting margins and paddings
-*,
-*::before,
-*::after {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  background-color: $background-color;
+  font-family: $title-font;
+  position: relative;
+}
+
+.container {
+  max-width: 107rem;
+  margin: 0 auto;
 }
 
 a {
