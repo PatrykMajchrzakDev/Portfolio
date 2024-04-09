@@ -18,16 +18,22 @@ $black-shade: #2d2e32;
 
 // font size
 $text-size: 1.7rem;
-$hero-size: 5.5rem;
+$hero-size: 3.5rem;
 $hero-text-size: 1.8rem;
-$headings-size: 2.5rem;
+$headings-size: 3rem;
 
 //font style
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins Regular";
   src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
 }
-$title-font: "Poppins", sans-serif;
+$regular-font: "Poppins Regular", sans-serif;
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+$title-font: "Poppins Bold", sans-serif;
 
 // ============= HEADINGS =============
 $h1: 40px;
