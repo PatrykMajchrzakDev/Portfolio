@@ -74,14 +74,14 @@
 .mobileMenuOpen {
   visibility: visible;
   opacity: 1;
-  transform: translateY(5.5rem);
+  transform: translateY(7.7rem);
   @include mobile {
-    transform: translateY(4.9rem);
+    transform: translateY(5.8rem);
   }
 }
 
 .mobileMenuList {
-  font-size: $headings-size;
+  font-size: $text-size;
   height: 100%;
   width: 100%;
   li {
