@@ -1,5 +1,6 @@
 // ============= Import Modules =============
 import styles from "./Hero.module.scss";
+import { Link } from "react-router-dom";
 // ============= Import Components =============
 
 const Hero = () => {
@@ -10,17 +11,23 @@ const Hero = () => {
         {/* Left section headings */}
         <div className={styles.heroDescription}>
           <div className={styles.mainHeading}>
-            <h1>Full-Stack Web Developer</h1>
-            <img src="" alt="wave hand" />
+            <h1>
+              Full-Stack Web Developer{" "}
+              <img src="/assets/icons/hello.webp" alt="wave hand" />
+            </h1>
           </div>
           <h2>
             Hi, I'm Patryk Majchrzak. A passionate React Web Developer based in
-            Leszno, Poland <img src="" alt="pin" />
+            Leszno, Poland <img src="/assets/icons/pin.webp" alt="pin" />
           </h2>
           {/* Socials */}
           <div className={styles.heroSocials}>
-            <img src="" alt="linkedin" />
-            <img src="" alt="github" />
+            <Link to={"https://www.linkedin.com/in/patryk-majchrzakdev/"}>
+              <img src="/assets/icons/linkedin.png" alt="linkedin" />
+            </Link>
+            <Link to={"https://github.com/PatrykMajchrzakDev"}>
+              <img src="/assets/icons/github.png" alt="github" />
+            </Link>
           </div>
         </div>
         {/*Right section main image */}

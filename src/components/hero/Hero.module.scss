@@ -1,31 +1,91 @@
 .heroContainer {
   //Has container class from globals
   padding-top: 10rem;
+  font-family: $regular-font;
+
+  @include tablet {
+    .heroDescription {
+      order: 2; // This will make the description come second
+    }
+
+    .heroImageSection {
+      order: 1; // This will make the image section come first
+    }
+  }
+  @include mobile {
+    padding-top: 3rem;
+  }
 }
 
 .heroWrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .heroDescription {
   width: 50%;
-  padding: 5rem;
+  padding: 3rem 5rem;
+
+  h2 {
+    padding-bottom: 3rem;
+    font-size: $text-size;
+    img {
+      width: 25px;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .mainHeading {
-  font-size: xx-large;
-  font-weight: 800;
+  font-family: $title-font;
+  font-size: $hero-size;
+  padding-bottom: 3rem;
+
+  @include desktop {
+    font-size: $headings-size;
+  }
+
+  @include tablet {
+    font-size: $headings-size;
+  }
+
+  img {
+    width: 5rem;
+    transform: translateY(20%);
+  }
 }
 
-// .heroSocials {
-// }
+.heroSocials {
+  display: flex;
+  gap: 1rem;
+
+  @include tablet {
+    justify-content: center;
+  }
+}
 
 .heroImageSection {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50%;
+
+  @include mobile {
+    width: 70%;
+  }
 }
 
 .heroImage {
@@ -35,11 +95,17 @@
   border: 1px solid black;
   content: "";
   position: static;
-  height: 25vmin;
-  width: 25vmin;
+  width: 350px;
+  height: 350px;
   background-image: url("/assets/img/profilowe.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @include tablet {
+    max-width: 350px;
+    max-height: 270px;
+  }
 }
 
 @keyframes anim {
