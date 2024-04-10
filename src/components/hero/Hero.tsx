@@ -36,28 +36,40 @@ const Hero = () => {
         </div>
       </div>
       {/*Bottom section tech stack */}
-      <div>
-        <div></div>
-        <div>
-          <div>
-            <img src="" alt="HTML" />
-            <img src="" alt="CSS" />
+      <div className={styles.techStackWrapper}>
+        <div className={styles.techStackText}>
+          <p>Tech Stack</p>
+        </div>
+        <div className={styles.techStackIconsWrapper}>
+          <div className={styles.iconsGroup}>
+            <img
+              src="https://skillicons.dev/icons?i=html,css"
+              alt="HTML and CSS"
+            />
           </div>
-          <div>
-            <img src="" alt="JavaScript" />
-            <img src="" alt="TypeScript" />
+          <div className={styles.iconsGroup}>
+            <img
+              src="https://skillicons.dev/icons?i=js,ts"
+              alt="JavaScript and TypeScript"
+            />
           </div>
-          <div>
-            <img src="" alt="ReactJS" />
-            <img src="" alt="NextJs" />
+          <div className={styles.iconsGroup}>
+            <img
+              src="https://skillicons.dev/icons?i=react,next"
+              alt="ReactJS and NextJs"
+            />
           </div>
-          <div>
-            <img src="" alt="NodeJS" />
-            <img src="" alt="Postgres" />
+          <div className={styles.iconsGroup}>
+            <img
+              src="https://skillicons.dev/icons?i=nodejs,postgres"
+              alt="NodeJS and Postgres"
+            />
           </div>
-          <div>
-            <img src="" alt="Tailwind" />
-            <img src="" alt="Scss" />
+          <div className={styles.iconsGroup}>
+            <img
+              src="https://skillicons.dev/icons?i=tailwind,scss"
+              alt="Tailwind and Scss"
+            />
           </div>
         </div>
       </div>

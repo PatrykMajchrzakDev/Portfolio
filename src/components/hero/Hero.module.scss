@@ -17,12 +17,14 @@
   }
 }
 
+// All hero content wrapper
 .heroWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
+  color: $text-color;
 
   @include tablet {
     flex-direction: column;
@@ -31,6 +33,7 @@
   }
 }
 
+// All hero desc wrapper
 .heroDescription {
   width: 50%;
   padding: 3rem 5rem;
@@ -49,10 +52,12 @@
   }
 }
 
+// First heading
 .mainHeading {
   font-family: $title-font;
   font-size: $hero-size;
   padding-bottom: 3rem;
+  color: $title-color;
 
   @include desktop {
     font-size: $headings-size;
@@ -68,6 +73,7 @@
   }
 }
 
+// Socials
 .heroSocials {
   display: flex;
   gap: 1rem;
@@ -77,6 +83,7 @@
   }
 }
 
+// Right side section wrapper
 .heroImageSection {
   display: flex;
   justify-content: center;
@@ -88,6 +95,7 @@
   }
 }
 
+// Right side image
 .heroImage {
   padding: 5rem;
   animation: anim 30s infinite;
@@ -108,6 +116,7 @@
   }
 }
 
+// Anim for img
 @keyframes anim {
   0%,
   100% {
@@ -148,5 +157,63 @@
 
   90% {
     border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
+
+// Tech stack wrapper
+.techStackWrapper {
+  display: flex;
+
+  align-items: center;
+  padding: 3rem 5rem;
+  color: $title-color;
+
+  @include desktop {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.techStackText {
+  font-size: $hero-text-size;
+  width: 15rem;
+  height: 100%;
+
+  @include desktop {
+    width: 10rem;
+  }
+
+  p {
+    border-right: 2px solid $text-color;
+    margin-right: 2rem;
+
+    @include desktop {
+      border-right: 0;
+      border-bottom: 2px solid $text-color;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+//icons wrapper
+.techStackIconsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+  }
+  .iconsGroup:first-child {
+    padding: 1rem 1rem 1rem 0;
+  }
+}
+
+.iconsGroup {
+  padding: 1rem 1rem;
+  img {
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      transform: translateY(-1rem);
+    }
   }
 }
