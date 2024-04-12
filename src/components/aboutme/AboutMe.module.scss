@@ -1,0 +1,53 @@
+// ===== LEFT SIDE SECTION =====
+.sectionWrapper {
+  display: flex;
+}
+
+.section {
+  padding: 16rem 0;
+}
+
+//Left side section
+.photoSection {
+  position: relative;
+  width: 50%;
+  height: 400px;
+  padding: 0 5rem;
+  img {
+    border-radius: 20%;
+  }
+}
+
+.circleContainer {
+  top: 80%;
+  left: 80%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 20;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   img {
+  //     animation: rotate 9s linear infinite;
+  //     @keyframes rotate {
+  //       to {
+  //         transform: rotate(360deg);
+  //       }
+  //     }
+  //   }
+}
+
+// ===== RIGHT SIDE SECION =====
+.textSection {
+  width: 50%;
+  padding: 0 5rem;
+  color: $text-color;
+  h2 {
+    img {
+      width: 2rem;
+    }
+  }
+}
