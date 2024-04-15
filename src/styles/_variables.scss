@@ -1,23 +1,24 @@
 // ============= BREAKPOINTS =============
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-laptop: 1024px;
 
 // ============= COLORS =============
 $default-text-color: black;
 $background-color: white;
 $gray-bg-color: #f9f9f9;
-$title-color: black;
 $text-color: #767676;
 $black-shade: #2d2e32;
+$section-header-color: #147efb;
 
 // ============= FONT =============
 
 // font size
 $text-size: 1.7rem;
 $hero-size: 3.5rem;
-$hero-text-size: 1.8rem;
+$hero-text-size: 2rem;
 $headings-size: 3rem;
+$section-headings-size: 2.4rem;
 
 //font style
 @font-face {

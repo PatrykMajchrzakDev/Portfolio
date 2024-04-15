@@ -61,9 +61,9 @@
   font-family: $title-font;
   font-size: $hero-size;
   padding-bottom: 3rem;
-  color: $title-color;
+  color: $default-text-color;
 
-  @include desktop {
+  @include laptop {
     font-size: $headings-size;
   }
 
@@ -170,9 +170,9 @@
 
   align-items: center;
   padding: 3rem 5rem;
-  color: $title-color;
+  color: $default-text-color;
 
-  @include desktop {
+  @include laptop {
     flex-direction: column;
     justify-content: center;
   }
@@ -183,7 +183,7 @@
   width: 15rem;
   height: 100%;
 
-  @include desktop {
+  @include laptop {
     width: 10rem;
   }
 
@@ -191,7 +191,7 @@
     border-right: 2px solid $text-color;
     margin-right: 2rem;
 
-    @include desktop {
+    @include laptop {
       border-right: 0;
       border-bottom: 2px solid $text-color;
       margin-right: 0;

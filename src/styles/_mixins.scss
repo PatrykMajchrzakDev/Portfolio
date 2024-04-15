@@ -11,8 +11,8 @@
   }
 }
 
-@mixin desktop {
-  @media (max-width: $breakpoint-desktop) {
+@mixin laptop {
+  @media (max-width: $breakpoint-laptop) {
     @content;
   }
 }
