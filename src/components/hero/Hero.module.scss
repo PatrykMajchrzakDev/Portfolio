@@ -1,5 +1,5 @@
 .section {
-  background-color: $gray-bg-color;
+  background-color: var(--secondary-bg-color);
 }
 
 .heroContainer {
@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  color: $text-color;
+  color: var(--gray-text-color);
 
   @include tablet {
     flex-direction: column;
@@ -61,7 +61,7 @@
   font-family: $title-font;
   font-size: $hero-size;
   padding-bottom: 3rem;
-  color: $default-text-color;
+  color: var(--default-text-color);
 
   @include laptop {
     font-size: $headings-size;
@@ -170,7 +170,7 @@
 
   align-items: center;
   padding: 3rem 5rem;
-  color: $default-text-color;
+  color: var(--default-text-color);
 
   @include laptop {
     flex-direction: column;
@@ -188,13 +188,13 @@
   }
 
   p {
-    border-right: 2px solid $text-color;
+    border-right: 2px solid var(--gray-text-color);
     margin-right: 2rem;
     text-align: center;
 
     @include laptop {
       border-right: 0;
-      border-bottom: 2px solid $text-color;
+      border-bottom: 2px solid var(--gray-text-color);
       margin-right: 0;
       margin-bottom: 2rem;
     }

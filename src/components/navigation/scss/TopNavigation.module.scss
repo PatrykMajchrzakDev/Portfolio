@@ -34,10 +34,10 @@
         cursor: pointer;
         padding: 0 2rem;
         text-decoration: none;
-        color: black;
+        color: var(--default-text-color);
       }
       a:hover {
-        color: cornflowerblue;
+        color: var(--section-header-color);
       }
     }
   }
@@ -64,7 +64,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--background-color);
   z-index: 10;
   visibility: hidden; // Hide by default
   opacity: 0;
@@ -86,11 +86,15 @@
   height: 100%;
   width: 100%;
   li {
+    cursor: pointer;
     padding: 2rem;
     text-align: center;
   }
 
   li:hover {
     background-color: darken(#fff, 10%);
+    a {
+      color: var(--section-header-color);
+    }
   }
 }

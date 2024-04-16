@@ -8,7 +8,7 @@
     text-transform: uppercase;
     padding-bottom: 3rem;
     font-size: $section-headings-size;
-    color: $section-header-color;
+    color: var(--section-header-color);
     @include tablet {
       text-align: center;
     }
@@ -41,7 +41,7 @@
   min-width: 60px;
   height: 60px;
   border-radius: 9999px;
-  border: 2px dashed $black-shade;
+  border: 2px dashed var(--default-shade);
   display: flex;
   justify-content: center;
   align-items: center;

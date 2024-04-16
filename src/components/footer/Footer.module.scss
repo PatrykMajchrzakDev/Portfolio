@@ -1,6 +1,5 @@
 .section {
-  background-color: $black-shade;
-  color: white;
+  background-color: var(--default-shade);
   width: 100%;
 }
 
@@ -12,13 +11,14 @@
 }
 
 .description {
+  color: var(--secondary-text-color);
   font-size: $hero-text-size;
 }
 
 // Socials
 .footerSocials {
   display: flex;
-  color: white;
+  color: var(--secondary-text-color);
   svg {
     width: 25px;
     margin: 0 1rem;
