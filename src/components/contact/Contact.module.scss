@@ -41,7 +41,7 @@
   min-width: 60px;
   height: 60px;
   border-radius: 9999px;
-  border: 2px dashed var(--default-shade);
+  border: 2px dashed var(--border-default);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,5 +57,6 @@
   }
   p {
     word-break: break-all;
+    color: var(--default-text-color);
   }
 }

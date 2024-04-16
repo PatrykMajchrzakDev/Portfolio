@@ -2,9 +2,15 @@
 import { useContext } from "react";
 import { NavigationScrollContext } from "@/context/NavigationScroll";
 import styles from "./AboutMe.module.scss";
+import ThemeStore from "@/store/ThemeStore";
 // ============= Import Components =============
 import Pin from "/assets/icons/pin.webp";
 const AboutMe = () => {
+  const theme = ThemeStore((state) => state.theme);
+  const curvedText =
+    theme === "light"
+      ? "/assets/img/curved-fullstack-text.webp"
+      : "/assets/img/curved-fullstack-text-white.webp";
   const { aboutMe } = useContext(NavigationScrollContext);
   return (
     <section ref={aboutMe} className={styles.section}>
@@ -15,7 +21,7 @@ const AboutMe = () => {
             alt="view at desk with laptop"
           />
           <div className={styles.circleContainer}>
-            <img src="/assets/img/curved-fullstack-text.webp" alt="" />
+            <img src={curvedText} alt="curved text - fullstack web developer" />
           </div>
         </div>
         <div className={styles.textSection}>

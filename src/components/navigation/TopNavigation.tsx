@@ -4,6 +4,7 @@ import styles from "./scss/TopNavigation.module.scss";
 import { NavigationScrollContext } from "@/context/NavigationScroll";
 
 // ============= Import Components =============
+import ThemeToggler from "../UI/themeToggler/ThemeToggler";
 import hamburgerMenu from "/assets/icons/bars-solid.svg";
 import xMark from "/assets/icons/xmark-solid.svg";
 
@@ -69,6 +70,7 @@ const TopNavigation = () => {
 
       {/* Right navigation section */}
       <div className={styles.list}>
+        <ThemeToggler />
         <ul>
           <li>
             <a

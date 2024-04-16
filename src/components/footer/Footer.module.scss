@@ -11,7 +11,7 @@
 }
 
 .description {
-  color: var(--secondary-text-color);
+  color: white;
   font-size: $hero-text-size;
 }
 
@@ -19,7 +19,7 @@
 .footerSocials {
   display: flex;
   color: var(--secondary-text-color);
-  svg {
+  img {
     width: 25px;
     margin: 0 1rem;
   }

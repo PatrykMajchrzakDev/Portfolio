@@ -1,14 +1,26 @@
 // ============= Import Modules =============
-import styles from "./Hero.module.scss";
-import { Link } from "react-router-dom";
+import ThemeStore from "@/store/ThemeStore";
 // ============= Import Components =============
+import styles from "./Hero.module.scss";
 import Pin from "/assets/icons/pin.webp";
+
 const Hero = () => {
   const HTMLCSSImg = "https://skillicons.dev/icons?i=html,css";
   const JSTSImg = "https://skillicons.dev/icons?i=js,ts";
   const ReactNext = "https://skillicons.dev/icons?i=react,next";
   const NodePostgres = "https://skillicons.dev/icons?i=nodejs,postgres";
   const TailwindScss = "https://skillicons.dev/icons?i=tailwind,scss";
+
+  const theme = ThemeStore((state) => state.theme);
+  const githubIcon =
+    theme === "light"
+      ? "/assets/icons/github-dark.svg"
+      : "/assets/icons/github-white.svg";
+  const linkedInIcon =
+    theme === "light"
+      ? "/assets/icons/linkedin-dark.svg"
+      : "/assets/icons/linkedin-white.svg";
+
   return (
     <section className={styles.section}>
       {/* Hero wrapper */}
@@ -28,12 +40,12 @@ const Hero = () => {
             </h2>
             {/* Socials */}
             <div className={styles.heroSocials}>
-              <Link to={"https://www.linkedin.com/in/patryk-majchrzakdev/"}>
-                <img src="/assets/icons/linkedin.png" alt="linkedin" />
-              </Link>
-              <Link to={"https://github.com/PatrykMajchrzakDev"}>
-                <img src="/assets/icons/github.png" alt="github" />
-              </Link>
+              <a href="https://www.linkedin.com/in/patryk-majchrzakdev/">
+                <img src={linkedInIcon} alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/PatrykMajchrzakDev">
+                <img src={githubIcon} alt="GitHub" />
+              </a>
             </div>
           </div>
           {/*Right section main image */}
