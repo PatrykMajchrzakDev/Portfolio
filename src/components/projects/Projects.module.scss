@@ -1,0 +1,10 @@
+.test {
+  height: 200px;
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  font-size: $headings-size;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
