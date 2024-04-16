@@ -1,13 +1,15 @@
 // ============= Import Modules =============
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useContext } from "react";
 import styles from "./scss/TopNavigation.module.scss";
+import { NavigationScrollContext } from "@/context/NavigationScroll";
 
 // ============= Import Components =============
 import hamburgerMenu from "/assets/icons/bars-solid.svg";
 import xMark from "/assets/icons/xmark-solid.svg";
 
 const TopNavigation = () => {
+  const { contact, aboutMe, projects } = useContext(NavigationScrollContext);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +17,7 @@ const TopNavigation = () => {
   };
 
   return (
-    <header className={styles.container}>
+    <nav className={styles.container}>
       <div
         className={`${styles.mobileMenu} ${
           isMenuOpen ? styles.mobileMenuOpen : ""
@@ -23,13 +25,31 @@ const TopNavigation = () => {
       >
         <ul className={styles.mobileMenuList}>
           <li>
-            <Link to={"#about"}>About</Link>
+            <a
+              onClick={() => {
+                aboutMe?.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About
+            </a>
           </li>
           <li>
-            <Link to={"#projects"}>Projects</Link>
+            <a
+              onClick={() =>
+                projects?.current?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <Link to={"#contact"}>Contact</Link>
+            <a
+              onClick={() => {
+                contact?.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
@@ -51,17 +71,35 @@ const TopNavigation = () => {
       <div className={styles.list}>
         <ul>
           <li>
-            <Link to={"#about"}>About</Link>
+            <a
+              onClick={() => {
+                aboutMe?.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About
+            </a>
           </li>
           <li>
-            <Link to={"#projects"}>Projects</Link>
+            <a
+              onClick={() =>
+                projects?.current?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <Link to={"#contact"}>Contact</Link>
+            <a
+              onClick={() => {
+                contact?.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 

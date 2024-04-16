@@ -1,15 +1,17 @@
 // ============= Import Modules =============
+import { useContext } from "react";
+import { NavigationScrollContext } from "@/context/NavigationScroll";
+import styles from "./Contact.module.scss";
 // ============= Import Components =============
 import MapIcon from "/assets/icons/map.svg";
 import EmailIcon from "/assets/icons/email.svg";
 import GithubIcon from "/assets/icons/github-blue.svg";
 import LinkedInIcon from "/assets/icons/linkedin-blue.svg";
 
-import styles from "./Contact.module.scss";
-
 const Contact = () => {
+  const { contact } = useContext(NavigationScrollContext);
   return (
-    <section className={`${styles.contactSection} container`}>
+    <section ref={contact} className={`${styles.contactSection} container`}>
       <h4>Contact</h4>
       <ul className={styles.contactListItems}>
         <li className={styles.contactListItemsWrapper}>

@@ -1,11 +1,13 @@
 // ============= Import Modules =============
-import Pin from "/assets/icons/pin.webp";
-
-// ============= Import Components =============
+import { useContext } from "react";
+import { NavigationScrollContext } from "@/context/NavigationScroll";
 import styles from "./AboutMe.module.scss";
+// ============= Import Components =============
+import Pin from "/assets/icons/pin.webp";
 const AboutMe = () => {
+  const { aboutMe } = useContext(NavigationScrollContext);
   return (
-    <section className={styles.section} id="about">
+    <section ref={aboutMe} className={styles.section}>
       <div className={`${styles.sectionWrapper} container`}>
         <div className={styles.photoSection}>
           <img
