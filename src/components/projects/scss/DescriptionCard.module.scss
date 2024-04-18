@@ -1,0 +1,37 @@
+.descriptionCard {
+  height: 100%;
+  width: 100%;
+  font-size: $text-size;
+  h4 {
+    padding: 1rem;
+    color: var(--section-header-color);
+  }
+  h3 {
+    padding: 1rem;
+    font-size: $hero-text-size;
+    color: var(--default-text-color);
+  }
+  a {
+    padding: 1rem;
+    text-decoration: underline;
+  }
+}
+
+.desc {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--section-header-color2);
+  text-align: start;
+}
+
+.noteContainer {
+  padding: 1rem 0;
+}
+
+.noteHeading {
+  color: yellow;
+}
+
+.noteDesc {
+  color: var(--secondary-text-color);
+}
