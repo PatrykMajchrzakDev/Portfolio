@@ -11,9 +11,9 @@ import LinkedInIcon from "/assets/icons/linkedin-blue.svg";
 const Contact = () => {
   const { contact } = useContext(NavigationScrollContext);
   return (
-    <section ref={contact} className={`${styles.contactSection} container`}>
-      <h4>Contact</h4>
-      <ul className={styles.contactListItems}>
+    <section ref={contact} className={styles.contactSection}>
+      <h4 className="container">Contact</h4>
+      <ul className={`${styles.contactListItems} container`}>
         <li className={styles.contactListItemsWrapper}>
           <div className={styles.iconWrapper}>
             <img src={MapIcon} alt="map" />
