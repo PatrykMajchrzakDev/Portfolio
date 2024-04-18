@@ -9,8 +9,8 @@ import hamburgerMenu from "/assets/icons/bars-solid.svg";
 import xMark from "/assets/icons/xmark-solid.svg";
 
 const TopNavigation = () => {
+  localStorage.setItem("theme", "light");
   const { contact, aboutMe, projects } = useContext(NavigationScrollContext);
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
