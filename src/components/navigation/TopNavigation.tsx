@@ -13,12 +13,18 @@ const TopNavigation = () => {
   const { contact, aboutMe, projects } = useContext(NavigationScrollContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <nav className={styles.container}>
+      {/* MOBILE NAVIGATION */}
       <div
         className={`${styles.mobileMenu} ${
           isMenuOpen ? styles.mobileMenuOpen : ""
@@ -29,6 +35,7 @@ const TopNavigation = () => {
             <a
               onClick={() => {
                 aboutMe?.current?.scrollIntoView({ behavior: "smooth" });
+                closeMenu();
               }}
             >
               About
@@ -36,9 +43,10 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
-              onClick={() =>
-                projects?.current?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => {
+                projects?.current?.scrollIntoView({ behavior: "smooth" });
+                closeMenu();
+              }}
             >
               Projects
             </a>
@@ -47,6 +55,7 @@ const TopNavigation = () => {
             <a
               onClick={() => {
                 contact?.current?.scrollIntoView({ behavior: "smooth" });
+                closeMenu();
               }}
             >
               Contact
@@ -68,7 +77,7 @@ const TopNavigation = () => {
         )}
       </div>
 
-      {/* Right navigation section */}
+      {/* DESKTOP VIEWPORT - Right navigation section */}
       <div className={styles.list}>
         <ThemeToggler />
         <ul>
