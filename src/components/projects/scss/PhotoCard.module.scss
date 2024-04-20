@@ -1,7 +1,25 @@
 .photoCard {
   width: 700px;
+  @include laptop {
+    width: 100%;
+    object-fit: cover;
+  }
   img {
     border-radius: 1rem;
     width: 700px;
+    @include laptop {
+      width: 100%;
+    }
+  }
+  video {
+    width: 700px;
+    height: 460px;
+    @include laptop {
+      width: 100%;
+      height: 400px;
+    }
+    @include mobile {
+      height: 220px;
+    }
   }
 }

@@ -35,3 +35,19 @@
 .noteDesc {
   color: var(--secondary-text-color);
 }
+
+.demoAcc {
+  padding-top: 1rem;
+  div {
+    display: flex;
+    @include mobile {
+      align-items: center;
+    }
+    p + p {
+      font-weight: bold;
+      @include mobile {
+        word-break: break-all;
+      }
+    }
+  }
+}
