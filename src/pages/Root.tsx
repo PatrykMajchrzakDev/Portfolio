@@ -4,7 +4,7 @@ import { NavigationScrollContext } from "@/context/NavigationScroll";
 import { useRef } from "react";
 
 // ============= Import Components =============
-import SideNavigation from "@/components/navigation/SideNavigation";
+// import SideNavigation from "@/components/navigation/SideNavigation";
 import TopNavigation from "@/components/navigation/TopNavigation";
 import Footer from "../components/footer/Footer";
 
@@ -21,7 +21,7 @@ const Root = () => {
   return (
     <NavigationScrollContext.Provider value={scrollRefs}>
       <TopNavigation />
-      <SideNavigation />
+      {/* <SideNavigation /> */}
       <Outlet />
       <Footer />
     </NavigationScrollContext.Provider>
