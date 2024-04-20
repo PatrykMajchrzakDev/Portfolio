@@ -3,11 +3,14 @@ import styles from "./scss/DescriptionCard.module.scss";
 // ============= Import Components =============
 
 type DescriptionTypes = {
-  description: string;
+  description: React.ReactNode;
   projectName: string;
   projectUrl: string;
   note?: string;
-  demoAcc?: string;
+  demoAcc?: {
+    login: string;
+    password: string;
+  };
 };
 
 const DescriptionCard: React.FC<DescriptionTypes> = ({
@@ -24,6 +27,19 @@ const DescriptionCard: React.FC<DescriptionTypes> = ({
       <a href={projectUrl}>Check out live version</a>
       <div className={styles.desc}>
         {description}
+        {demoAcc && (
+          <div className={styles.demoAcc}>
+            <p>Feel free to use demo account:</p>
+            <div>
+              <p>Username:&nbsp;</p>
+              <p>{demoAcc.login}</p>
+            </div>
+            <div>
+              <p>Password:&nbsp;</p>
+              <p>{demoAcc.password}</p>
+            </div>
+          </div>
+        )}
         {note && (
           <div className={styles.noteContainer}>
             <p className={styles.noteHeading}>
