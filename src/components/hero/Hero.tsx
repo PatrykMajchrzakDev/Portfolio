@@ -30,13 +30,13 @@ const Hero = () => {
           <div className={styles.heroDescription}>
             <div className={styles.mainHeading}>
               <h1>
-                Full-Stack Web Developer{" "}
+                Front-End Web Developer{" "}
                 <img src="/assets/icons/hello.webp" alt="wave hand" />
               </h1>
             </div>
             <h2>
-              Hi, I'm Patryk Majchrzak. A passionate React Web Developer based
-              in Leszno, Poland <img src={Pin} alt="pin" />
+              Hi, I'm Patryk Majchrzak. A passionate Front-End Web Developer
+              based in Leszno, Poland <img src={Pin} alt="pin" />
             </h2>
             {/* Socials */}
             <div className={styles.heroSocials}>
