@@ -55,5 +55,9 @@ $regular-font: "Poppins Regular", sans-serif;
 $title-font: "Poppins Bold", sans-serif;
 
 //============= CONTAINERS =============
-$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+$shadow-blue-lg: 0 0 15px 5px var(--section-header-color),
+  0 4px 6px -4px rgb(0 0 0 / 0.1);
+$shadow-dark-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+  0 4px 6px -4px rgb(0 0 0 / 0.1);
 $shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.25);
+$shadow-inner2: inset 0 0px 2px 1px var(--section-header-color);
