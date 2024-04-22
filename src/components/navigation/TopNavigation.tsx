@@ -69,17 +69,26 @@ const TopNavigation = () => {
       </div>
 
       {/* Hamburger Menu */}
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        {isMenuOpen ? (
-          <img src={xMark} alt="close menu" />
-        ) : (
-          <img src={hamburgerMenu} alt="hamburger menu" />
-        )}
+      <div className={styles.hamburgerContainer}>
+        <div className={styles.hamburgerWrapper}>
+          <ThemeToggler id="1" />
+          <div className={styles.hamburger}>
+            {isMenuOpen ? (
+              <img src={xMark} alt="close menu" onClick={toggleMenu} />
+            ) : (
+              <img
+                src={hamburgerMenu}
+                alt="hamburger menu"
+                onClick={toggleMenu}
+              />
+            )}
+          </div>
+        </div>
       </div>
 
       {/* DESKTOP VIEWPORT - Right navigation section */}
       <div className={styles.list}>
-        <ThemeToggler />
+        <ThemeToggler id="2" />
         <ul>
           <li>
             <a
