@@ -18,10 +18,13 @@
 }
 
 .desc {
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: var(--section-header-color2);
+  background-color: var(--background-color);
   text-align: start;
+  color: var(--default-text-color);
+  box-shadow: $shadow-inner2;
 }
 
 .noteContainer {
@@ -33,7 +36,7 @@
 }
 
 .noteDesc {
-  color: var(--secondary-text-color);
+  color: var(--default-text-color);
 }
 
 .demoAcc {

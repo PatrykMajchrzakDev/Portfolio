@@ -7,8 +7,12 @@
   h2 {
     color: var(--section-header-color);
     font-size: $section-headings-size;
-    padding: 5rem 0;
+    padding-top: 5rem;
     text-transform: uppercase;
+
+    @include tablet {
+      text-align: center;
+    }
 
     @include mobile {
       padding: 2rem 0;
@@ -21,7 +25,7 @@
 }
 
 .cardItemWrapper {
-  padding: 5rem 0;
+  padding: 8rem 0;
   height: 600px;
   width: 100%;
   position: relative;
