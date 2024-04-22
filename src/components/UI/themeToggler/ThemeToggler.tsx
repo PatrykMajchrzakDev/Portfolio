@@ -3,7 +3,11 @@ import ThemeStore from "@/store/ThemeStore";
 // ============= Import Components =============
 import styles from "./ThemeToggler.module.scss";
 
-const ThemeToggler = () => {
+type ThemeTogglerType = {
+  id: string;
+};
+
+const ThemeToggler: React.FC<ThemeTogglerType> = ({ id }) => {
   const toggleTheme = ThemeStore((state) => state.toggleTheme);
 
   const handleToggle = () => {
@@ -16,10 +20,10 @@ const ThemeToggler = () => {
       <input
         type="checkbox"
         className={styles.checkbox}
-        id="checkbox"
+        id={id}
         onChange={handleToggle} // Ensures handleToggle is called on change
       />
-      <label htmlFor="checkbox" className={styles.checkboxLabel}>
+      <label htmlFor={id} className={styles.checkboxLabel}>
         <span className={styles.ball}></span>
       </label>
     </div>
