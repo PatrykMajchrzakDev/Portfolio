@@ -27,11 +27,11 @@ const AboutMe = () => {
         <div className={styles.textSection}>
           <h4>About Me</h4>
           <h3>
-            Full-Stack Web Developer located in Leszno, Poland
+            Front-End Web Developer located in Leszno, Poland
             <img src={Pin} alt="pin" />
           </h3>
           <p>
-            Hi, I'm Patryk, a Full-Stack Web Developer. I specialize in crafting
+            Hi, I'm Patryk, Front-End Web Developer. I specialize in crafting
             web applications using the latest technologies, with a focus on
             delivering clean and user-friendly UI/UX.
           </p>
