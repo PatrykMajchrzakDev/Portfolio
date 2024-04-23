@@ -17,9 +17,12 @@
   padding: 0 2rem;
   font-size: $headings-size;
   justify-self: start;
-
-  @include mobile {
+  @include tablet {
     font-size: $hero-text-size;
+  }
+  @include mobile {
+    font-size: $text-size;
+    display: none;
   }
 }
 
@@ -33,6 +36,7 @@
 
   ul {
     display: flex;
+    align-items: center;
     li {
       a {
         cursor: pointer;
@@ -49,21 +53,29 @@
 
 .hamburgerContainer {
   display: none; // Hide hamburger menu by default
-
+  img {
+    height: 25px;
+  }
   @include tablet {
     display: flex; // Show the hamburger menu on mobile
     align-items: center;
     cursor: pointer;
-    width: 120px;
+    width: 230px;
 
     .hamburgerWrapper {
       display: flex;
+      align-items: center;
       gap: 2rem;
-    }
 
-    img {
-      height: 25px;
+      .hamburger {
+        height: 25px;
+      }
     }
+  }
+  @include mobile {
+    width: 100%;
+    justify-content: end;
+    margin-right: 1rem;
   }
 }
 

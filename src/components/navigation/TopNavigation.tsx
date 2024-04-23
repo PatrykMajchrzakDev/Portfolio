@@ -4,7 +4,8 @@ import styles from "./scss/TopNavigation.module.scss";
 import { NavigationScrollContext } from "@/context/NavigationScroll";
 
 // ============= Import Components =============
-import ThemeToggler from "../UI/themeToggler/ThemeToggler";
+import ThemeToggler from "../UI/ThemeToggler/ThemeToggler";
+import LanguageToggler from "@/components/UI/LanguageToggler/LanguageToggler";
 import hamburgerMenu from "/assets/icons/bars-solid.svg";
 import xMark from "/assets/icons/xmark-solid.svg";
 
@@ -71,6 +72,7 @@ const TopNavigation = () => {
       {/* Hamburger Menu */}
       <div className={styles.hamburgerContainer}>
         <div className={styles.hamburgerWrapper}>
+          <LanguageToggler />
           <ThemeToggler id="1" />
           <div className={styles.hamburger}>
             {isMenuOpen ? (
@@ -88,8 +90,13 @@ const TopNavigation = () => {
 
       {/* DESKTOP VIEWPORT - Right navigation section */}
       <div className={styles.list}>
-        <ThemeToggler id="2" />
         <ul>
+          <li>
+            <LanguageToggler />
+          </li>
+          <li>
+            <ThemeToggler id="2" />
+          </li>
           <li>
             <a
               onClick={() => {
