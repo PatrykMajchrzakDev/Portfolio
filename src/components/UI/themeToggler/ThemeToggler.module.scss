@@ -1,35 +1,57 @@
 .togglerWrapper {
-  position: relative;
-}
-.checkbox {
-  opacity: 0;
-  position: absolute;
+  .darkMode {
+    .sun {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    .moon {
+      transform: translate(-50%, -150%);
+      opacity: 0;
+    }
+  }
 }
 
-.checkboxLabel {
-  background-color: var(--default-text-color);
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+.togglerWrapper {
+  width: 25px;
+  height: 25px;
+  button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
 
-.checkboxLabel .ball {
-  background-color: var(--secondary-text-color);
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
+    //center image inside button
+    img,
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 25px;
+      height: 25px;
+      pointer-events: none;
+    }
 
-.checkbox:checked + .checkboxLabel .ball {
-  transform: translateX(24px);
+    .moon {
+      z-index: 2;
+      // Transition properties
+      transition: transform 0.3s, opacity 0.3s, fill 0.3s;
+      fill: black;
+    }
+
+    .sun {
+      z-index: 1;
+      // Transition property
+      transform: translate(-50%, 100%);
+      opacity: 1;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  }
 }

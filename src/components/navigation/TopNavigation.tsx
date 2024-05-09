@@ -4,7 +4,7 @@ import styles from "./scss/TopNavigation.module.scss";
 import { NavigationScrollContext } from "@/context/NavigationScroll";
 
 // ============= Import Components =============
-import ThemeTogglerV2 from "../UI/ThemeToggler/ThemeToggler";
+import ThemeTogglerV2 from "../UI/themeToggler/ThemeToggler";
 // import LanguageToggler from "@/components/UI/LanguageToggler/LanguageToggler";
 import hamburgerMenu from "/assets/icons/bars-solid.svg";
 import xMark from "/assets/icons/xmark-solid.svg";
