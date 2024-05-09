@@ -12,11 +12,13 @@ $breakpoint-laptop: 1024px;
   --gray-text-color: #767676;
   --section-header-color: #147efb;
   --section-header-color2: #58a6ff;
+  --text-project-cards: black;
   // Background colors
   --background-color: white;
   --secondary-bg-color: #f9f9f9;
   --default-shade: #2d2e32;
   --border-default: #2d2e32;
+  --project-cards: white;
 }
 
 // Dark theme variables
@@ -31,6 +33,8 @@ $breakpoint-laptop: 1024px;
   --secondary-bg-color: #242424;
   --default-shade: #2d2e32;
   --border-default: white;
+  --project-cards: #2d2e32;
+  --text-project-cards: white;
 }
 
 // ============= FONT =============
