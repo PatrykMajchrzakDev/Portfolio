@@ -43,7 +43,7 @@ const DescriptionCard: React.FC<DescriptionTypes> = ({
         {note && (
           <div className={styles.noteContainer}>
             <p className={styles.noteHeading}>
-              Note:<p className={styles.noteDesc}>{note}</p>
+              Note: <span className={styles.noteDesc}>{note}</span>
             </p>
           </div>
         )}

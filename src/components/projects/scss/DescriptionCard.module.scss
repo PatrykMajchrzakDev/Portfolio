@@ -21,9 +21,9 @@
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: var(--background-color);
+  background-color: var(--project-cards);
   text-align: start;
-  color: var(--default-text-color);
+  color: var(--text-project-cards);
   box-shadow: $shadow-inner2;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .noteHeading {
-  color: yellow;
+  color: orange;
 }
 
 .noteDesc {
