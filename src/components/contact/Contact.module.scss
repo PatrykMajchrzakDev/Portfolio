@@ -4,7 +4,7 @@
     width: 30px;
     height: 30px;
   }
-  h4 {
+  h2 {
     text-transform: uppercase;
     padding-bottom: 3rem;
     font-size: $section-headings-size;
@@ -58,5 +58,9 @@
   p {
     word-break: break-all;
     color: var(--default-text-color);
+  }
+  a {
+    color: var(--section-header-color);
+    cursor: pointer;
   }
 }

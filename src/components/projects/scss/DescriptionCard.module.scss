@@ -2,11 +2,11 @@
   height: 100%;
   width: 100%;
   font-size: $text-size;
-  h4 {
+  h3 {
     padding: 1rem;
     color: var(--section-header-color);
   }
-  h3 {
+  h4 {
     padding: 1rem;
     font-size: $hero-text-size;
     color: var(--default-text-color);
@@ -21,7 +21,7 @@
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: var(--project-cards);
+  background-color: var(--background-color);
   text-align: start;
   color: var(--text-project-cards);
   box-shadow: $shadow-inner2;
