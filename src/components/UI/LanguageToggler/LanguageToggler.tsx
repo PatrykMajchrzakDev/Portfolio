@@ -10,12 +10,16 @@ interface OptionType {
 }
 
 const LanguageToggler: React.FC = () => {
+  // Zustand language store
   const { lang, setLanguage } = useLanguageStore();
+
+  // react-select language options
   const languageOptions: OptionType[] = [
     { value: "en", label: "EN", icon: "assets/icons/en-flag.png" },
     { value: "pl", label: "PL", icon: "assets/icons/pl-flag.png" },
   ];
 
+  // Change lang store value
   const handleChange = (option: SingleValue<OptionType>) => {
     if (option) {
       setLanguage(option.value);
@@ -27,14 +31,15 @@ const LanguageToggler: React.FC = () => {
     control: (provided) => ({
       ...provided,
       border: "none",
+      backgroundColor: "var(--background-color)",
     }),
 
     option: (provided, state) => ({
       ...provided,
       display: "flex",
       alignItems: "center",
-      backgroundColor: state.isFocused ? "lightgray" : "white",
-      color: "black",
+      backgroundColor: state.isFocused ? "gray" : "var(--background-color)",
+      color: "var(--default-text-color)",
       padding: "0px",
     }),
     dropdownIndicator: (provided) => ({
@@ -44,16 +49,26 @@ const LanguageToggler: React.FC = () => {
     singleValue: (provided) => ({
       ...provided,
       width: "50px",
+      color: "var(--default-text-color)",
     }),
     valueContainer: (provided) => ({
       ...provided,
       padding: "0px",
     }),
+    menu: (provided) => ({
+      ...provided,
+      backgroundColor: "var(--menu-background-color)", // Set the background color for the menu
+    }),
   };
 
   // Custom format option label function
   const formatOptionLabel = (option: OptionType) => (
-    <div style={{ display: "flex", alignItems: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
       <img
         src={option.icon}
         alt={`${option.value} flag`}
@@ -62,7 +77,6 @@ const LanguageToggler: React.FC = () => {
       {option.label}
     </div>
   );
-
   return (
     <div className={styles.languageContainer}>
       <Select<OptionType, false>
@@ -71,6 +85,7 @@ const LanguageToggler: React.FC = () => {
         options={languageOptions}
         formatOptionLabel={formatOptionLabel}
         styles={customStyles}
+        // menuIsOpen={true}
         components={{
           IndicatorSeparator: () => null,
         }}

@@ -13,7 +13,7 @@
     }
     img {
       width: 25px;
-    
+
       @include tablet {
         display: none;
       }
