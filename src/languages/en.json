@@ -1,0 +1,51 @@
+{
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "logo": "PatrykMajchrzak.dev"
+  },
+  "about": {
+    "h2": "About Me",
+    "h3": "Front-End Web Developer located in Leszno, Poland",
+    "intro": "Hi, I'm Patryk, Front-End Web Developer. I specialize in crafting web applications using the latest technologies, with a focus on delivering clean and user-friendly UI/UX.",
+    "stack": "My current tech stack includes React, Node.js, and various databases. However, I am adaptable and open to exploring and integrating other technologies as well."
+  },
+  "contact": {
+    "section": "Contact",
+    "branch": {
+      "loc": "Location",
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "desc": {
+      "loc": "Leszno, Poland",
+      "email": "patrykmajchrzakdev@gmail.com",
+      "github": "PatrykMajchrzakDev",
+      "linkedin": "PatrykMajchrzak"
+    }
+  },
+  "hero": {
+    "h1": "Front-End Web Developer",
+    "h2": "Hi, I'm Patryk Majchrzak. A passionate Front-End Web Developer based in Leszno, Poland",
+    "p": "Tech Stack"
+  },
+  "projects": {
+    "descCard": {
+      "h3": "Featured Project",
+      "url": "Check out live version",
+      "demo": "Feel free to use demo account:",
+      "username": "Username:",
+      "pass": "Password:",
+      "note": "Note:"
+    },
+    "desc": {
+      "h2": "Some Things I've Built",
+      "localvibe": "LocalVibe is a dynamic web application that transforms how users discover and interact with places of interest. Integrated seamlessly with the <b>Google Places API</b>, the app allows users to <b>search</b> for and{' '} <b>find detailed information about various locations</b> , including restaurants, parks, and cultural landmarks.{' '} <br></br> <br></br> Each listed place includes essential details such as user-generated ratings, the number of reviews, and precise location data. Enhancing the exploration experience, the app also displays <b>real-time local weather conditions< b>, providing users with all the necessary information to plan their visits efficiently and effectively.",
+      "feedshare": "Feedshare is a dynamic photo-sharing platform where users can easily <b>log in via Google</b> to{' '} <b>share, save, and download photos</b>. It encourages interaction through <b>likes</b> and <b>comments</b> and facilitates discovery through categorized searches. <br></br> <br></br>The application features a <b>masonry grid layout</b>, enhancing the visual presentation and browsing experience by accommodating images of various sizes. This design choice optimizes screen use and engages users effectively.",
+      "bikeshop": "Bike Shop Manager <b>simplifies</b> bicycle shop operations, enabling users to <b>create</b> and <b>track</b> orders,{' '} <b>manage</b> client data, and <b>monitor</b> order statuses. It features <b>local login</b>{' '} for security and provides efficient tools to edit and oversee near-completion orders, optimizing administrative tasks.",
+      "kamieniarstwo": "Kamieniarstwo Mariusz Paul is a meticulously crafted{' '} <b>static website</b> built using HTML, CSS, and JavaScript. Designed to <b>showcase</b> a stone masonry business, it features dedicated sections for offers, contact information, and company background.<br></br> <br></br> The site <b>enhances user engagement</b> through element <b>animations</b> and a <b>photo carousel</b> that displays the craftsmanship and products available. Additionally, an integrated map provides location details, facilitating easy access for potential customers. This website combines functional design with interactive elements to provide a comprehensive and visually appealing online presence for Kamieniarstwo Mariusz Paul."
+    }
+  }
+}

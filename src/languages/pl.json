@@ -1,0 +1,51 @@
+{
+  "navigation": {
+    "about": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "logo": "PatrykMajchrzak.dev"
+  },
+  "about": {
+    "h2": "O mnie",
+    "h3": "Front-End Web Developer located in Leszno, Poland",
+    "intro": "Hi, I'm Patryk, Front-End Web Developer. I specialize in crafting web applications using the latest technologies, with a focus on delivering clean and user-friendly UI/UX.",
+    "stack": "My current tech stack includes React, Node.js, and various databases. However, I am adaptable and open to exploring and integrating other technologies as well."
+  },
+  "contact": {
+    "section": "Kontakt",
+    "branch": {
+      "loc": "Lokalizacja",
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "desc": {
+      "loc": "Leszno, Poland",
+      "email": "patrykmajchrzakdev@gmail.com",
+      "github": "PatrykMajchrzakDev",
+      "linkedin": "PatrykMajchrzak"
+    }
+  },
+  "hero": {
+    "h1": "Front-End Web Developer",
+    "h2": "Hi, I'm Patryk Majchrzak. A passionate Front-End Web Developer based in Leszno, Poland",
+    "p": "Tech Stack"
+  },
+  "projects": {
+    "descCard": {
+      "h3": "Featured Project",
+      "url": "Check out live version",
+      "demo": "Feel free to use demo account:",
+      "username": "Username",
+      "pass": "Password",
+      "note": "Note:"
+    },
+    "desc": {
+      "h2": "",
+      "localvibe": "",
+      "feedshare": "",
+      "bikeshop": "",
+      "kamieniarstwo": ""
+    }
+  }
+}
