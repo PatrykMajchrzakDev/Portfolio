@@ -3,10 +3,16 @@ import { useContext } from "react";
 import { NavigationScrollContext } from "@/context/NavigationScroll";
 import styles from "./AboutMe.module.scss";
 import ThemeStore from "@/store/ThemeStore";
+import useLanguageStore from "@/store/LanguageStore";
+import enLang from "@/languages/en.json";
+import plLang from "@/languages/pl.json";
 // ============= Import Components =============
 import Pin from "/assets/icons/pin.webp";
+
 const AboutMe = () => {
   const theme = ThemeStore((state) => state.theme);
+  const { lang } = useLanguageStore();
+  const translation = lang === "en" ? enLang : plLang;
   const curvedText =
     theme === "light"
       ? "/assets/img/curved-fullstack-text.webp"
@@ -25,21 +31,13 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.textSection}>
-          <h4>About Me</h4>
+          <h2>{translation.about.h2}</h2>
           <h3>
-            Front-End Web Developer located in Leszno, Poland
+            {translation.about.h3}
             <img src={Pin} alt="pin" />
           </h3>
-          <p>
-            Hi, I'm Patryk, Front-End Web Developer. I specialize in crafting
-            web applications using the latest technologies, with a focus on
-            delivering clean and user-friendly UI/UX.
-          </p>
-          <p>
-            My current tech stack includes React, Node.js, and various
-            databases. However, I am adaptable and open to exploring and
-            integrating other technologies as well.
-          </p>
+          <p>{translation.about.intro}</p>
+          <p>{translation.about.stack}</p>
         </div>
       </div>
     </section>

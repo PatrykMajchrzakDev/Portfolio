@@ -1,5 +1,8 @@
 // ============= Import Modules =============
 import ThemeStore from "@/store/ThemeStore";
+import useLanguageStore from "@/store/LanguageStore";
+import enLang from "@/languages/en.json";
+import plLang from "@/languages/pl.json";
 // ============= Import Components =============
 import styles from "./Hero.module.scss";
 import Pin from "/assets/icons/pin.webp";
@@ -11,6 +14,8 @@ const Hero = () => {
   const NodePostgres = "https://skillicons.dev/icons?i=nodejs,postgres";
   const TailwindScss = "https://skillicons.dev/icons?i=tailwind,scss";
 
+  const { lang } = useLanguageStore();
+  const translation = lang === "en" ? enLang : plLang;
   const theme = ThemeStore((state) => state.theme);
   const githubIcon =
     theme === "light"
@@ -30,13 +35,12 @@ const Hero = () => {
           <div className={styles.heroDescription}>
             <div className={styles.mainHeading}>
               <h1>
-                Front-End Web Developer{" "}
+                {translation.hero.h1}{" "}
                 <img src="/assets/icons/hello.webp" alt="wave hand" />
               </h1>
             </div>
             <h2>
-              Hi, I'm Patryk Majchrzak. A passionate Front-End Web Developer
-              based in Leszno, Poland <img src={Pin} alt="pin" />
+              {translation.hero.h2} <img src={Pin} alt="pin" />
             </h2>
             {/* Socials */}
             <div className={styles.heroSocials}>
@@ -56,7 +60,7 @@ const Hero = () => {
         {/*Bottom section tech stack */}
         <div className={styles.techStackWrapper}>
           <div className={styles.techStackText}>
-            <p>Tech Stack</p>
+            <p>{translation.hero.p}</p>
           </div>
           <div className={styles.techStackIconsWrapper}>
             <div className={styles.iconsGroup}>
