@@ -7,9 +7,9 @@
   },
   "about": {
     "h2": "O mnie",
-    "h3": "Front-End Web Developer located in Leszno, Poland",
-    "intro": "Hi, I'm Patryk, Front-End Web Developer. I specialize in crafting web applications using the latest technologies, with a focus on delivering clean and user-friendly UI/UX.",
-    "stack": "My current tech stack includes React, Node.js, and various databases. However, I am adaptable and open to exploring and integrating other technologies as well."
+    "h3": "Front-End Web Developer z Leszno, Polska",
+    "intro": "Cześć, jestem Patryk, Front-End Web Developer. Specjalizuję się w tworzeniu aplikacji internetowych wykorzystujących najnowsze technologie, z naciskiem na czysty i przyjazny użytkownikowi interfejs oraz doświadczenie użytkownika.",
+    "stack": "Mój obecny zestaw technologii obejmuje React, Node.js oraz różnorodne bazy danych. Jestem jednak elastyczny i otwarty na eksplorowanie oraz integrację innych technologii."
   },
   "contact": {
     "section": "Kontakt",
@@ -20,7 +20,7 @@
       "linkedin": "LinkedIn"
     },
     "desc": {
-      "loc": "Leszno, Poland",
+      "loc": "Leszno, Polska",
       "email": "patrykmajchrzakdev@gmail.com",
       "github": "PatrykMajchrzakDev",
       "linkedin": "PatrykMajchrzak"
@@ -28,24 +28,24 @@
   },
   "hero": {
     "h1": "Front-End Web Developer",
-    "h2": "Hi, I'm Patryk Majchrzak. A passionate Front-End Web Developer based in Leszno, Poland",
-    "p": "Tech Stack"
+    "h2": "Cześć, jestem Patryk Majchrzak. Pasjonujący Front-End Developer z Leszno, Polska",
+    "p": "Technologie"
   },
   "projects": {
     "descCard": {
-      "h3": "Featured Project",
-      "url": "Check out live version",
-      "demo": "Feel free to use demo account:",
-      "username": "Username:",
-      "pass": "Password:",
-      "note": "Note:"
+      "h3": "Wybrany Projekt",
+      "url": "Sprawdź wersję live",
+      "demo": "Możesz użyć konta demo:",
+      "username": "Użytkownik:",
+      "pass": "Hasło:",
+      "note": "Uwaga:"
     },
     "desc": {
-      "h2": "Some Things I've Built",
-      "localvibe": "LocalVibe is a dynamic web application that transforms how users discover and interact with places of interest. Integrated seamlessly with the <b>Google Places API</b>, the app allows users to <b>search</b> for and{' '} <b>find detailed information about various locations</b> , including restaurants, parks, and cultural landmarks.{' '} <br></br> <br></br> Each listed place includes essential details such as user-generated ratings, the number of reviews, and precise location data. Enhancing the exploration experience, the app also displays <b>real-time local weather conditions< b>, providing users with all the necessary information to plan their visits efficiently and effectively.",
-      "feedshare": "Feedshare is a dynamic photo-sharing platform where users can easily <b>log in via Google</b> to{' '} <b>share, save, and download photos</b>. It encourages interaction through <b>likes</b> and <b>comments</b> and facilitates discovery through categorized searches. <br></br> <br></br>The application features a <b>masonry grid layout</b>, enhancing the visual presentation and browsing experience by accommodating images of various sizes. This design choice optimizes screen use and engages users effectively.",
-      "bikeshop": "Bike Shop Manager <b>simplifies</b> bicycle shop operations, enabling users to <b>create</b> and <b>track</b> orders,{' '} <b>manage</b> client data, and <b>monitor</b> order statuses. It features <b>local login</b>{' '} for security and provides efficient tools to edit and oversee near-completion orders, optimizing administrative tasks.",
-      "kamieniarstwo": "Kamieniarstwo Mariusz Paul is a meticulously crafted{' '} <b>static website</b> built using HTML, CSS, and JavaScript. Designed to <b>showcase</b> a stone masonry business, it features dedicated sections for offers, contact information, and company background.<br></br> <br></br> The site <b>enhances user engagement</b> through element <b>animations</b> and a <b>photo carousel</b> that displays the craftsmanship and products available. Additionally, an integrated map provides location details, facilitating easy access for potential customers. This website combines functional design with interactive elements to provide a comprehensive and visually appealing online presence for Kamieniarstwo Mariusz Paul."
+      "h2": "Kilka projektów, które zrealizowałem",
+      "localvibe": "LocalVibe to dynamiczna aplikacja internetowa, która zmienia sposób, w jaki użytkownicy odkrywają i wchodzą w interakcję z miejscami zainteresowania. Zintegrowana płynnie z <b>API Google Places</b>, aplikacja umożliwia użytkownikom <b>wyszukiwanie</b> i <b>znajdowanie szczegółowych informacji o różnych lokalizacjach</b>, w tym restauracjach, parkach i zabytkach kulturowych.<br></br> Każde wymienione miejsce zawiera podstawowe dane takie jak oceny użytkowników, liczba recenzji i dokładne dane lokalizacyjne. Poprawiając doświadczenia eksploracyjne, aplikacja pokazuje również <b>warunki pogodowe w czasie rzeczywistym</b>.",
+      "feedshare": "Feedshare to dynamiczna platforma do dzielenia się zdjęciami, gdzie użytkownicy mogą łatwo <b>zalogować się przez Google</b>, aby <b>dzielić się, zapisywać i pobierać zdjęcia</b>. Zachęca do interakcji poprzez <b>polubienia</b> i <b>komentarze</b> oraz ułatwia odkrywanie poprzez kategoryzowane wyszukiwanie. <br></br>Aplikacja oferuje układ <b>siatki murarskiej</b>, poprawiając prezentację wizualną i doświadczenie przeglądania przez dostosowanie do obrazów różnych rozmiarów. To rozwiązanie optymalizuje wykorzystanie ekranu i efektywnie angażuje użytkowników.",
+      "bikeshop": "Menadżer Sklepu Rowerowego <b>upraszcza</b> operacje sklepu rowerowego, umożliwiając użytkownikom <b>tworzenie</b> i <b>śledzenie</b> zamówień, <b>zarządzanie</b> danymi klientów oraz <b>monitorowanie</b> statusów zamówień. Funkcjonuje z <b>lokalnym logowaniem</b> dla bezpieczeństwa i dostarcza efektywne narzędzia do edycji i nadzoru nad zamówieniami zbliżającymi się do realizacji, optymalizując zadania administracyjne.",
+      "kamieniarstwo": "Kamieniarstwo Mariusz Paul to starannie wykonana <b>statyczna strona internetowa</b> stworzona przy użyciu HTML, CSS i JavaScript. Zaprojektowana do <b>prezentacji</b> firmy kamieniarskiej, zawiera dedykowane sekcje dla ofert, informacji kontaktowych i tła firmy.<br></br>Strona <b>zwiększa zaangażowanie użytkowników</b> poprzez <b>animacje elementów</b> i <b>karuzelę zdjęć</b>, która pokazuje umiejętności i produkty dostępne. Dodatkowo, zintegrowana mapa zapewnia szczegóły lokalizacji, ułatwiając dostęp potencjalnym klientom. Ta witryna łączy funkcjonalny design z interaktywnymi elementami, dostarczając kompleksową i wizualnie atrakcyjną obecność online dla Kamieniarstwa Mariusz Paul."
     }
   }
 }
