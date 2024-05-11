@@ -10,6 +10,11 @@ import PhotoCard from "./PhotoCard";
 import DescriptionCard from "./DescriptionCard";
 
 const Projects = () => {
+  const ProjectDescription: React.FC<{ description: string }> = ({
+    description,
+  }) => {
+    return <span dangerouslySetInnerHTML={{ __html: description }}></span>;
+  };
   const { projects } = useContext(NavigationScrollContext);
   const { lang } = useLanguageStore();
   const translation = lang === "en" ? enLang : plLang;
@@ -19,13 +24,17 @@ const Projects = () => {
       <div className={`${styles.projectsWrapper} container`}>
         <h2 className={styles.projectsHeading}>Some Things I've Built</h2>
 
-        {/* 1st project */}
+        {/* 1st project LocalVibe*/}
         <div className={styles.cardItemWrapper}>
           <div className={`${styles.cardDescriptionItem} ${styles.leftDesc}`}>
             <DescriptionCard
               projectUrl="https://local-vibe.vercel.app/"
               projectName="LocalVibe"
-              description={<span>{translation.projects.desc.localvibe}</span>}
+              description={
+                <ProjectDescription
+                  description={translation.projects.desc.localvibe}
+                />
+              }
             />
           </div>
 
@@ -34,13 +43,17 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* 2nd project */}
+        {/* 2nd project Feedshare*/}
         <div className={styles.cardItemWrapper}>
           <div className={`${styles.cardDescriptionItem} ${styles.rightDesc}`}>
             <DescriptionCard
               projectUrl="https://feedshare.netlify.app/login"
               projectName="FeedShare"
-              description={<span>{translation.projects.desc.feedshare}</span>}
+              description={
+                <ProjectDescription
+                  description={translation.projects.desc.feedshare}
+                />
+              }
             />
           </div>
           <div className={`${styles.cardPhotoItem} ${styles.leftPhoto}`}>
@@ -48,13 +61,17 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* 3rd project */}
+        {/* 3rd project Bike Shop Manager*/}
         <div className={styles.cardItemWrapper}>
           <div className={`${styles.cardDescriptionItem} ${styles.leftDesc}`}>
             <DescriptionCard
               projectUrl="https://bike-shop-manager.onrender.com/"
               projectName="Bike Shop Manager"
-              description={<span>{translation.projects.desc.bikeshop}</span>}
+              description={
+                <ProjectDescription
+                  description={translation.projects.desc.bikeshop}
+                />
+              }
               note="The Back-End of this application is hosted on a free server, it takes about 20 seconds to respond to initial request."
               demoAcc={{ login: "user3@gmail.com", password: "user3123" }}
             />
@@ -64,14 +81,20 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* 4th project */}
+        {/* 4th project Kamieniarstwo*/}
         <div className={styles.cardItemWrapper}>
           <div className={`${styles.cardDescriptionItem} ${styles.rightDesc}`}>
             <DescriptionCard
               projectUrl="https://playful-salmiakki-ec06d2.netlify.app/"
               projectName="Kamieniarstwo Mariusz Paul"
               description={
-                <span>{translation.projects.desc.kamieniarstwo}</span>
+                <span>
+                  {
+                    <ProjectDescription
+                      description={translation.projects.desc.kamieniarstwo}
+                    />
+                  }
+                </span>
               }
             />
           </div>
