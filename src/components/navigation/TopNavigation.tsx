@@ -40,6 +40,7 @@ const TopNavigation = () => {
         <ul className={styles.mobileMenuList}>
           <li>
             <a
+              rel="nofollow"
               onClick={() => {
                 aboutMe?.current?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
@@ -50,6 +51,7 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
+              rel="nofollow"
               onClick={() => {
                 projects?.current?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
@@ -60,6 +62,7 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
+              rel="nofollow"
               onClick={() => {
                 contact?.current?.scrollIntoView({ behavior: "smooth" });
                 closeMenu();
@@ -105,6 +108,7 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
+              rel="nofollow"
               onClick={() => {
                 aboutMe?.current?.scrollIntoView({ behavior: "smooth" });
               }}
@@ -114,6 +118,7 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
+              rel="nofollow"
               onClick={() =>
                 projects?.current?.scrollIntoView({ behavior: "smooth" })
               }
@@ -123,6 +128,7 @@ const TopNavigation = () => {
           </li>
           <li>
             <a
+              rel="nofollow"
               onClick={() => {
                 contact?.current?.scrollIntoView({ behavior: "smooth" });
               }}
