@@ -72,7 +72,7 @@ const Projects = () => {
                   description={translation.projects.desc.bikeshop}
                 />
               }
-              note="The Back-End of this application is hosted on a free server, it takes about 20 seconds to respond to initial request."
+              note={translation.projects.desc.note}
               demoAcc={{ login: "user3@gmail.com", password: "user3123" }}
             />
           </div>
